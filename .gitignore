@@ -1,0 +1,9 @@
+# Nunca suba sua chave de API de verdade
+.env
+.env.local
+
+# Vercel
+.vercel
+
+# Node (caso adicione dependências no futuro)
+node_modules

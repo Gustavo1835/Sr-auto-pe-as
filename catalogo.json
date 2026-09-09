@@ -1,0 +1,16 @@
+[
+  { "id": "mot-correia-kit", "categoria": "Motor", "nome": "Kit Correia Dentada + Tensor + Bomba d'Água", "marca": "Mahle", "sku": "SR-MOT-4192", "oem": "06A198119A", "preco": 689.00 },
+  { "id": "mot-velas-iridium", "categoria": "Motor", "nome": "Jogo de Velas de Ignição Iridium (4 un.)", "marca": "NGK", "sku": "SR-ELE-5128", "oem": "101905631H", "preco": 179.90 },
+  { "id": "mot-bobina", "categoria": "Elétrica & Injeção", "nome": "Bobina de Ignição Individual", "marca": "Magneti Marelli", "sku": "SR-ELE-5348", "oem": "0221502035", "preco": 259.00 },
+  { "id": "mot-filtro-ar", "categoria": "Acessórios & Fluídos", "nome": "Filtro de Ar Esportivo Lavável", "marca": "K&N", "sku": "SR-MOT-4890", "oem": "1K0129620D", "preco": 449.00 },
+  { "id": "mot-oleo", "categoria": "Acessórios & Fluídos", "nome": "Óleo Sintético 5W30 API SP — 4L", "marca": "Mobil", "sku": "SR-ACE-7188", "oem": "OE-5W30-4L", "preco": 189.90 },
+  { "id": "fre-pastilha", "categoria": "Freios", "nome": "Kit Pastilha de Freio Dianteira Cerâmica", "marca": "Bosch", "sku": "SR-FRE-1042", "oem": "1K0615301AA", "preco": 189.90 },
+  { "id": "fre-disco", "categoria": "Freios", "nome": "Par de Discos de Freio Ventilados 288mm", "marca": "Brembo", "sku": "SR-FRE-2210", "oem": "8N0615601B", "preco": 549.00 },
+  { "id": "sus-bieleta", "categoria": "Suspensão", "nome": "Kit Bieleta + Buchas da Barra Estabilizadora", "marca": "Nakata", "sku": "SR-SUS-3355", "oem": "6Q0411315B", "preco": 148.50 },
+  { "id": "sus-coxim", "categoria": "Suspensão", "nome": "Kit Coxim + Rolamento do Amortecedor", "marca": "Sampel", "sku": "SR-SUS-3720", "oem": "1J0412331C", "preco": 179.00 },
+  { "id": "sus-amortecedor", "categoria": "Suspensão", "nome": "Par Amortecedor Dianteiro Pressurizado", "marca": "Cofap", "sku": "SR-SUS-3301", "oem": "1J0413031AK", "preco": 729.90 },
+  { "id": "tra-embreagem", "categoria": "Transmissão", "nome": "Kit Embreagem Completo (Platô, Disco e Atuador)", "marca": "LUK", "sku": "SR-TRA-6081", "oem": "038141015N", "preco": 1249.00 },
+  { "id": "tra-homocinetica", "categoria": "Transmissão", "nome": "Par de Juntas Homocinéticas Dianteiras", "marca": "SKF", "sku": "SR-TRA-6210", "oem": "1J0407271F", "preco": 459.00 },
+  { "id": "ele-sensor-rotacao", "categoria": "Elétrica & Injeção", "nome": "Sensor de Rotação do Motor (CKP)", "marca": "Bosch", "sku": "SR-ELE-5618", "oem": "0281002735", "preco": 149.90 },
+  { "id": "ele-bateria", "categoria": "Elétrica & Injeção", "nome": "Bateria 60Ah Livre de Manutenção", "marca": "Moura", "sku": "SR-ELE-6011", "oem": "M60GD", "preco": 449.00 }
+]

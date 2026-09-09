@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="./script.js" defer></script>
+    <title>SR Autopeças</title>
+</head>
+<body>
+
+  <div class="top-bar">
+    <span> Frete grátis acima de R$ 299 | 10% OFF no Pix | Até 12x no cartão </span>
+  </div>
+
+  <header class="header">
+    <div class="header-main">
+      <div class="logo">
+        <span class="logo-icon"><i class="fa-solid fa-gauge-high"></i></span>
+        <div>
+          <h2>SR <span>AUTOPEÇAS</span></h2>
+          <small>PRECISÃO & POTÊNCIA</small>
+        </div>
+      </div>
+
+      <div class="search-box">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" placeholder="Buscar por peça, SKU ou código OEM (ex: 1K0615301AA)">
+        <button class="btn-search">BUSCAR</button>
+      </div>
+
+      <nav class="user-actions">
+        <button href="#" class="btn-garage"><i class="fa-solid fa-car"></i> Minha Garagem</button>
+        <button href="#"><i class="fa-solid fa-box"></i> Meus Pedidos</button>
+        <button href="#"><i class="fa-solid fa-user"></i> Login</button>
+        <button href="#" class="btn-cart"><i class="fa-solid fa-cart-shopping"></i> CARRINHO</button>
+      </nav>
+    </div>
+
+   <nav class="nav-bar">
+  <!-- Dropdown 1: Por Tipo -->
+  <div class="dropdown">
+    <button class="dropdown-btn">
+      POR TIPO <i class="fa-solid fa-chevron-down"></i>
+    </button>
+    
+    <div class="dropdown-menu">
+      <span class="dropdown-header">Categorias técnicas</span>
+      
+      <a href="#" class="dropdown-item">
+        <strong>Motor</strong>
+        <small>Correias, juntas, bombas e kits</small>
+      </a>
+
+      <a href="#" class="dropdown-item">
+        <strong>Freios</strong>
+        <small>Discos, pastilhas e fluídos</small>
+      </a>
+
+      <a href="#" class="dropdown-item">
+        <strong>Suspensão</strong>
+        <small>Amortecedores, molas, coxins</small>
+      </a>
+
+      <a href="#" class="dropdown-item">
+        <strong>Transmissão</strong>
+        <small>Embreagens e homocinéticas</small>
+      </a>
+
+      <a href="#" class="dropdown-item">
+        <strong>Elétrica & Injeção</strong>
+        <small>Velas, bobinas, sensores</small>
+      </a>
+
+      <a href="#" class="dropdown-item">
+        <strong>Acessórios & Fluídos</strong>
+        <small>Óleos, filtros e performance</small>
+      </a>
+    </div>
+  </div>
+
+  <!-- Dropdown 2: Por Montadora -->
+  <div class="dropdown">
+    <button class="dropdown-btn">
+      POR MONTADORA <i class="fa-solid fa-chevron-down"></i>
+    </button>
+    
+    <div class="dropdown-menu">
+      <span class="dropdown-header">Montadoras atendidas</span>
+      
+      <a href="#" class="dropdown-item-simple">Volkswagen</a>
+      <a href="#" class="dropdown-item-simple">Chevrolet</a>
+      <a href="#" class="dropdown-item-simple">Fiat</a>
+      <a href="#" class="dropdown-item-simple">Ford</a>
+      <a href="#" class="dropdown-item-simple">Toyota</a>
+      <a href="#" class="dropdown-item-simple">Honda</a>
+      <a href="#" class="dropdown-item-simple">Hyundai</a>
+      <a href="#" class="dropdown-item-simple">Renault</a>
+      <a href="#" class="dropdown-item-simple">Jeep</a>
+      <a href="#" class="dropdown-item-simple">Peugeot</a>
+    </div>
+  </div>
+
+  
+  <a href="#" class="nav-link text-red">OFERTAS RELÂMPAGO</a>
+  <a href="#" class="nav-link">Contato & Suporte</a>
+</nav>
+  </header>
+
+
+
+
+
+<section class="hero-carousel" id="heroCarousel">
+ 
+ 
+  <div class="slide active" style="background-image: url('Assets/Carrosel-1.jpg');">
+    <div class="slide-overlay"></div>
+    <div class="slide-content">
+      <span class="slide-tag">DESCONTO EXCLUSIVO NO PIX</span>
+      <h1>SEU CARRO MERECE <span class="highlight">O MELHOR</span></h1>
+      <p>10% OFF à vista no Pix em toda a linha de freios premium — discos ventilados, pastilhas cerâmicas e fluidos DOT 4.</p>
+      <div class="slide-actions">
+        <a href="#" class="btn btn-primary">Aproveitar desconto →</a>
+        <a href="#" class="btn btn-secondary">Catálogo completo</a>
+      </div>
+    </div>
+  </div>
+ 
+ 
+  <div class="slide" style="background-image: url('Assets/Carrosel2.jpg');">
+    <div class="slide-overlay"></div>
+    <div class="slide-content">
+      <span class="slide-tag">DESEMPENHO NA MEDIDA</span>
+      <h1>SUSPENSÃO FIRME, <span class="highlight">DIREÇÃO CIRÚRGICA</span></h1>
+      <p>Amortecedores pressurizados, kits de bieleta e coxins com envio no mesmo dia para todo o Brasil.</p>
+      <div class="slide-actions">
+        <a href="#" class="btn btn-primary">Ver kits de suspensão →</a>
+        <a href="#" class="btn btn-secondary">Catálogo completo</a>
+      </div>
+    </div>
+  </div>
+ 
+
+  <div class="slide" style="background-image: url('Assets/Carrosel3.jpg');">
+    <div class="slide-overlay"></div>
+    <div class="slide-content">
+      <span class="slide-tag">POTÊNCIA SOB CONTROLE</span>
+      <h1>MAIS FORÇA, <span class="highlight">MAIS CONFIANÇA</span></h1>
+      <p>Kits de motor e turbo com garantia de compatibilidade por IA e suporte técnico especializado.</p>
+      <div class="slide-actions">
+        <a href="#" class="btn btn-primary">Ver kits de motor →</a>
+        <a href="#" class="btn btn-secondary">Catálogo completo</a>
+      </div>
+    </div>
+  </div>
+ 
+  
+  <button class="arrow arrow-prev" id="prevBtn" aria-label="Slide anterior">
+    <svg viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+  <button class="arrow arrow-next" id="nextBtn" aria-label="Próximo slide">
+    <svg viewBox="0 0 24 24"><path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+ 
+  <div class="dots" id="dots"></div>
+ 
+</section>
+ 
+
+<section class="smart-garage-section" id="smartGarage">
+  <div class="smart-garage-card">
+    
+    <div class="sg-header">
+      <div class="sg-title-box">
+        <h2><i class="fa-solid fa-microchip text-red"></i> SR SMART GARAGE</h2>
+        <p>Encontre a peça exata pelo veículo ou descreva o problema — a IA sugere os componentes mais prováveis.</p>
+      </div>
+      <div class="sg-badge-guarantee">
+        <i class="fa-solid fa-shield-halved"></i> COMPATIBILIDADE GARANTIDA POR IA
+      </div>
+    </div>
+
+    <div class="sg-tabs">
+      <button class="sg-tab-btn active" data-tab="tab-veiculo">
+        <i class="fa-solid fa-car"></i> Buscar por veículo
+      </button>
+      <button class="sg-tab-btn" data-tab="tab-ia">
+        <i class="fa-solid fa-sparkles"></i> Pode Consultar AI
+      </button>
+    </div>
+
+    <div class="sg-tab-content active" id="tab-veiculo">
+      <form class="sg-form-grid" id="formVeiculo">
+        <div class="sg-input-group">
+          <label>Montadora</label>
+          <select id="selectMontadora" required>
+            <option value="">Ex: Volkswagen</option>
+            <option value="chevrolet">Chevrolet</option>
+            <option value="volkswagen">Volkswagen</option>
+            <option value="fiat">Fiat</option>
+            <option value="toyota">Toyota</option>
+          </select>
+        </div>
+
+        <div class="sg-input-group">
+          <label>Modelo</label>
+          <select id="selectModelo" required>
+            <option value="">Ex: Golf TSI</option>
+            <option value="cruze">Cruze LT</option>
+            <option value="golf">Golf 1.4 TSI</option>
+            <option value="onix">Onix Turbo</option>
+          </select>
+        </div>
+
+        <div class="sg-input-group">
+          <label>Ano / Motorização</label>
+          <select id="selectMotorizacao" required>
+            <option value="">Ex: 2.0 EA888</option>
+            <option value="1.4-turbo">1.4 Turbo</option>
+            <option value="1.0-turbo">1.0 Turbo</option>
+            <option value="2.0-ea888">2.0 EA888</option>
+          </select>
+        </div>
+
+        <div class="sg-input-group">
+          <label>Peça / Problema</label>
+          <input type="text" placeholder="Pastilha dianteira, kit correia..." id="inputPecaVeiculo">
+        </div>
+
+        <div class="sg-form-actions">
+          <button type="submit" class="btn-primary-action">
+            <i class="fa-solid fa-check"></i> VERIFICAR COMPATIBILIDADE
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <div class="sg-tab-content" id="tab-ia">
+      <div class="sg-ia-container">
+        <label class="sg-ia-label">Descreva o sintoma do veículo</label>
+        <div class="sg-ia-input-wrapper">
+          <textarea 
+            id="promptIa" 
+            rows="2" 
+            placeholder="Ex: Barulho metálico na suspensão dianteira ao passar em lombada"></textarea>
+        </div>
+
+        <div class="sg-quick-tags">
+          <span>Escolha rápida ou recomendação técnica se passar na contramão:</span>
+          <div class="tags-wrapper">
+            <button type="button" class="quick-tag" data-query="Motor falhando na aceleração">Motor falhando na aceleração</button>
+            <button type="button" class="quick-tag" data-query="Vibração no volante ao frear">Vibração no volante ao frear</button>
+            <button type="button" class="quick-tag" data-query="Embreagem patinando">Embreagem patinando</button>
+            <button type="button" class="quick-tag" data-query="Barulho metálico na suspensão dianteira">Barulho fino no freio</button>
+          </div>
+        </div>
+
+        <div class="sg-form-actions">
+          <button type="button" class="btn-primary-action" id="btnConsultarIa">
+            <i class="fa-solid fa-wand-magic-sparkles"></i> CONSULTAR IA
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="sg-results" id="sgResults" style="display: none;">
+      <div class="sg-results-header">
+        <span id="resultadoVeiculoContexto">Chevrolet Cruze LT 1.4 Turbo</span>
+      </div>
+
+      <div class="sg-cards-list" id="sgCardsList">
+        </div>
+
+      <div class="sg-suporte-cta" id="sgSuporteCta" style="display: none;">
+        <p id="sgSuporteMensagem">Não encontramos uma peça com boa correspondência pro seu caso. Fale com um dos nossos especialistas.</p>
+        <a href="#" target="_blank" rel="noopener" class="btn-whatsapp" id="sgSuporteLink">
+          <i class="fa-brands fa-whatsapp"></i> Falar no WhatsApp
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="cart-drawer-overlay" id="cartOverlay"></div>
+<aside class="cart-drawer" id="cartDrawer">
+  <div class="cart-drawer-header">
+    <h3><i class="fa-solid fa-cart-shopping text-red"></i> SEU CARRINHO</h3>
+    <button class="cart-close-btn" id="closeCart">&times;</button>
+  </div>
+
+  <div class="cart-items" id="cartItemsList">
+    </div>
+
+  <div class="cart-drawer-footer">
+    <div class="cart-summary-line">
+      <span>Subtotal:</span>
+      <span id="cartSubtotal">R$ 0,00</span>
+    </div>
+    <div class="cart-summary-line total">
+      <span>TOTAL NO PIX:</span>
+      <span class="text-red" id="cartTotalPix">R$ 0,00</span>
+    </div>
+    <button class="btn-checkout">FINALIZAR COMPRA</button>
+  </div>
+</aside>
+
+<section class="navegue-sistema">
+  <div class="sistema-header">
+    <h2>NAVEGUE POR <span>SISTEMA</span></h2>
+    <p>Catálogo organizado como uma oficina: escolha o sistema com total confiança de peças.</p>
+  </div>
+
+  <div class="cards-sistemas">
+    <!-- Card 1: Motor -->
+    <a href="#" class="card-sistema">
+      <div class="card-icon"><i class="fa-solid fa-gears"></i></div>
+      <span class="card-title">MOTOR</span>
+      <p class="card-desc">Correias, juntas, bombas e kits</p>
+    </a>
+
+    <!-- Card 2: Freio -->
+    <a href="#" class="card-sistema">
+      <div class="card-icon"><i class="fa-solid fa-compact-disc"></i></div>
+      <span class="card-title">FREIO</span>
+      <p class="card-desc">Discos, pastilhas e fluídos</p>
+    </a>
+
+    <!-- Card 3: Suspensão -->
+    <a href="#" class="card-sistema">
+      <div class="card-icon"><i class="fa-solid fa-wrench"></i></div>
+      <span class="card-title">SUSPENSÃO</span>
+      <p class="card-desc">Amortecedores, molas e buchas</p>
+    </a>
+
+    <!-- Card 4: Transmissão -->
+    <a href="#" class="card-sistema">
+      <div class="card-icon"><i class="fa-solid fa-arrows-split-up-and-left"></i></div>
+      <span class="card-title">TRANSMISSÃO</span>
+      <p class="card-desc">Embreagens, cabos e juntas</p>
+    </a>
+
+    <!-- Card 5: Elétrica & Injeção -->
+    <a href="#" class="card-sistema">
+      <div class="card-icon"><i class="fa-solid fa-bolt"></i></div>
+      <span class="card-title">ELÉTRICA & INJEÇÃO</span>
+      <p class="card-desc">Sensores, velas e bobinas</p>
+    </a>
+
+    <!-- Card 6: Acessórios & Fluídos -->
+    <a href="#" class="card-sistema">
+      <div class="card-icon"><i class="fa-solid fa-oil-can"></i></div>
+      <span class="card-title">ACESSÓRIOS & FLUÍDOS</span>
+      <p class="card-desc">Óleos, filtros e aditivos</p>
+    </a>
+  </div>
+</section>
+<a href="#" target="_blank" rel="noopener" class="whatsapp-float" id="whatsappFloat" aria-label="Atendimento técnico via WhatsApp">
+  <i class="fa-brands fa-whatsapp"></i>
+  <span class="whatsapp-float-tooltip">Atendimento técnico</span>
+</a>
+
+</body>
+</html>
