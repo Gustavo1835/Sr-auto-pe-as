@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="carrinho.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="pix.js"></script>
+    <script src="carrinho.js" defer></script>
+    <title>Checkout — SR Autopeças</title>
+</head>
+<body>
+    
+ <div class="top-bar">
+    <span> Frete grátis acima de R$ 299 | 10% OFF no Pix | Até 12x no cartão </span>
+  </div>
+
+  <header class="header">
+    <div class="header-main">
+      <div class="logo">
+        <span class="logo-icon"><i class="fa-solid fa-gauge-high"></i></span>
+        <div>
+          <h2>SR <span>AUTOPEÇAS</span></h2>
+          <small>PRECISÃO & POTÊNCIA</small>
+        </div>
+      </div>
+
+      <div class="search-box">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" placeholder="Buscar por peça, SKU ou código OEM (ex: 1K0615301AA)">
+        <button class="btn-search">BUSCAR</button>
+      </div>
+
+      <nav class="user-actions">
+        <button href="#" class="btn-garage"><i class="fa-solid fa-car"></i> Minha Garagem</button>
+        <button href="#"><i class="fa-solid fa-box"></i> Meus Pedidos</button>
+        <button href="#"><i class="fa-solid fa-user"></i> Login</button>
+        <button href="#" class="btn-cart"><i class="fa-solid fa-cart-shopping"></i> CARRINHO</button>
+      </nav>
+    </div>
+
+   <nav class="nav-bar">
+  <!-- Dropdown 1: Por Tipo -->
+  <div class="dropdown">
+    <button class="dropdown-btn">
+      POR TIPO <i class="fa-solid fa-chevron-down"></i>
+    </button>
+    
+    <div class="dropdown-menu">
+      <span class="dropdown-header">Categorias técnicas</span>
+      
+      <a href="#" class="dropdown-item">
+        <strong>Motor</strong>
+        <small>Correias, juntas, bombas e kits</small>
+      </a>
+
+      <a href="#" class="dropdown-item">
+        <strong>Freios</strong>
+        <small>Discos, pastilhas e fluídos</small>
+      </a>
+
+      <a href="#" class="dropdown-item">
+        <strong>Suspensão</strong>
+        <small>Amortecedores, molas, coxins</small>
+      </a>
+
+      <a href="#" class="dropdown-item">
+        <strong>Transmissão</strong>
+        <small>Embreagens e homocinéticas</small>
+      </a>
+
+      <a href="#" class="dropdown-item">
+        <strong>Elétrica & Injeção</strong>
+        <small>Velas, bobinas, sensores</small>
+      </a>
+
+      <a href="#" class="dropdown-item">
+        <strong>Acessórios & Fluídos</strong>
+        <small>Óleos, filtros e performance</small>
+      </a>
+    </div>
+  </div>
+
+  <!-- Dropdown 2: Por Montadora -->
+  <div class="dropdown">
+    <button class="dropdown-btn">
+      POR MONTADORA <i class="fa-solid fa-chevron-down"></i>
+    </button>
+    
+    <div class="dropdown-menu">
+      <span class="dropdown-header">Montadoras atendidas</span>
+      
+      <a href="#" class="dropdown-item-simple">Volkswagen</a>
+      <a href="#" class="dropdown-item-simple">Chevrolet</a>
+      <a href="#" class="dropdown-item-simple">Fiat</a>
+      <a href="#" class="dropdown-item-simple">Ford</a>
+      <a href="#" class="dropdown-item-simple">Toyota</a>
+      <a href="#" class="dropdown-item-simple">Honda</a>
+      <a href="#" class="dropdown-item-simple">Hyundai</a>
+      <a href="#" class="dropdown-item-simple">Renault</a>
+      <a href="#" class="dropdown-item-simple">Jeep</a>
+      <a href="#" class="dropdown-item-simple">Peugeot</a>
+    </div>
+  </div>
+
+  
+  <a href="#" class="nav-link text-red">OFERTAS RELÂMPAGO</a>
+  <a href="#" class="nav-link">Contato & Suporte</a>
+</nav>
+  </header>
+
+<main class="checkout-wrapper">
+  <!-- Título e Subtítulo -->
+  <div class="checkout-header">
+    <h1>CHECKOUT SEGURO</h1>
+    <span class="text-ambiente">
+      <i class="fa-solid fa-lock"></i> Ambiente protegido com SSL 256 bits
+    </span>
+  </div>
+
+  <!-- Grid com as duas colunas -->
+  <div class="checkout-grid">
+    <!-- Coluna Esquerda: Entrega e Pagamento -->
+    <div class="col-main">
+      <section class="card entrega-container">
+        <h3 class="card-title"><i class="fa-solid fa-truck"></i> ENTREGA</h3>
+        <div class="cep-group">
+          <input type="text" placeholder="CEP 00000-000" class="input-cep" />
+          <button class="btn-secondary">Recalcular</button>
+        </div>
+      </section>
+
+      <section class="card container-pagamento">
+        <h3 class="card-title"><i class="fa-solid fa-credit-card"></i> PAGAMENTO</h3>
+
+        <div class="pagamento-tabs" role="tablist">
+          <button class="pagamento-tab-btn active" data-painel="painel-pix" type="button">
+            <i class="fa-brands fa-pix"></i> Pix
+          </button>
+          <button class="pagamento-tab-btn" data-painel="painel-cartao" type="button">
+            <i class="fa-solid fa-credit-card"></i> Cartão
+          </button>
+          <button class="pagamento-tab-btn" data-painel="painel-boleto" type="button">
+            <i class="fa-solid fa-barcode"></i> Boleto
+          </button>
+        </div>
+
+        <!-- PIX -->
+        <div class="pagamento-painel active" id="painel-pix">
+          <div class="pix-valor-info">
+            <span class="valor" id="pixValor">R$ 0,00</span>
+            <span class="pix-desconto-tag">10% de desconto aplicado</span>
+          </div>
+
+          <div class="pix-conteudo">
+            <div class="pix-qrcode-box" id="pixQrCode"></div>
+
+            <div class="pix-copia-cola">
+              <label>Código Pix (copia e cola)</label>
+              <textarea class="pix-codigo-input" id="pixCodigo" readonly></textarea>
+              <button class="btn-copiar-pix" id="btnCopiarPix" type="button">
+                <i class="fa-solid fa-copy"></i> Copiar código Pix
+              </button>
+            </div>
+          </div>
+
+          <button class="btn-confirmar-pedido" id="btnConfirmarPedido" type="button">
+            <i class="fa-solid fa-check"></i> JÁ PAGUEI — CONFIRMAR PEDIDO
+          </button>
+        </div>
+
+        <!-- CARTÃO -->
+        <div class="pagamento-painel" id="painel-cartao">
+          <div class="cartao-conteudo">
+            <div class="cartao-3d-wrapper">
+              <div class="cartao-3d" id="cartao3d">
+                <div class="cartao-face cartao-frente">
+                  <div class="cartao-chip"></div>
+                  <div class="cartao-numero" id="previewNumero">•••• •••• •••• ••••</div>
+                  <div class="cartao-rodape">
+                    <div>
+                      <div class="cartao-nome" id="previewNome">NOME NO CARTÃO</div>
+                      <div class="cartao-validade" id="previewValidade">MM/AA</div>
+                    </div>
+                    <div class="cartao-bandeira">VISA</div>
+                  </div>
+                </div>
+                <div class="cartao-face cartao-verso">
+                  <div class="cartao-tarja"></div>
+                  <div class="cartao-cvv-area"><span id="previewCvv">•••</span></div>
+                </div>
+              </div>
+            </div>
+
+            <form class="cartao-form" id="formCartao">
+              <div>
+                <label for="inputNumeroCartao">Número do cartão</label>
+                <input type="text" id="inputNumeroCartao" placeholder="0000 0000 0000 0000" maxlength="19" inputmode="numeric">
+              </div>
+              <div>
+                <label for="inputNomeCartao">Nome no cartão</label>
+                <input type="text" id="inputNomeCartao" placeholder="Como está impresso no cartão">
+              </div>
+              <div class="cartao-form-linha">
+                <div>
+                  <label for="inputValidadeCartao">Validade</label>
+                  <input type="text" id="inputValidadeCartao" placeholder="MM/AA" maxlength="5" inputmode="numeric">
+                </div>
+                <div>
+                  <label for="inputCvvCartao">CVV</label>
+                  <input type="text" id="inputCvvCartao" placeholder="000" maxlength="4" inputmode="numeric">
+                </div>
+              </div>
+
+              <button type="button" class="btn-pagar-cartao" id="btnPagarCartao">
+                <i class="fa-solid fa-lock"></i> PAGAR COM CARTÃO
+              </button>
+              <p class="aviso-demo">
+                Ambiente de demonstração — este formulário ainda não processa cobranças reais.
+              </p>
+            </form>
+          </div>
+        </div>
+
+        <!-- BOLETO -->
+        <div class="pagamento-painel" id="painel-boleto">
+          <p class="boleto-placeholder">Pagamento por boleto em breve.</p>
+        </div>
+      </section>
+    </div>
+
+    <!-- Coluna Direita: Resumo do Pedido -->
+    <aside class="col-sidebar">
+      <section class="card resumo-container">
+        <h3 class="card-title">RESUMO</h3>
+        <div id="resumoItens"><p class="resumo-vazio">Seu carrinho está vazio.</p></div>
+        <div class="resumo-linha">
+          <span>Subtotal</span>
+          <span id="resumoSubtotal">R$ 0,00</span>
+        </div>
+        <div class="resumo-linha">
+          <span>Frete</span>
+          <span id="resumoFrete">R$ 0,00</span>
+        </div>
+        <div class="resumo-linha total">
+          <span>Total</span>
+          <span id="resumoTotal">R$ 0,00</span>
+        </div>
+        <div class="resumo-linha">
+          <span>No Pix (10% OFF)</span>
+          <span class="valor-pix" id="resumoTotalPix">R$ 0,00</span>
+        </div>
+      </section>
+    </aside>
+  </div>
+</main>
+
+</body>
+</html>
