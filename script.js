@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // ------------------------------------------------------------------
   // Configuração — troque pelo número real do WhatsApp (com DDI+DDD)
   // ------------------------------------------------------------------
-  const WHATSAPP_NUMERO = '5511992257919'; // TODO: coloque o número real aqui
+  const WHATSAPP_NUMERO = '5511999999999'; // TODO: coloque o número real aqui
   const ENDPOINT_IA = '/api/consultar-ia'; // função serverless (Vercel)
 
   function linkWhatsapp(mensagem) {
@@ -301,5 +301,18 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('cartSubtotal').innerText = `R$ ${total.toFixed(2).replace('.', ',')}`;
     document.getElementById('cartTotalPix').innerText = `R$ ${(total * 0.9).toFixed(2).replace('.', ',')}`;
     document.querySelector('.btn-cart').innerHTML = `<i class="fa-solid fa-cart-shopping"></i> CARRINHO (${cart.length})`;
+  }
+
+  // Ao finalizar, salva o carrinho pra página de checkout (carrinho.html) ler
+  const btnFinalizarCompra = document.getElementById('btnFinalizarCompra');
+  if (btnFinalizarCompra) {
+    btnFinalizarCompra.addEventListener('click', () => {
+      if (cart.length === 0) {
+        alert('Seu carrinho está vazio.');
+        return;
+      }
+      localStorage.setItem('sr_carrinho', JSON.stringify(cart));
+      window.location.href = 'carrinho.html';
+    });
   }
 });
